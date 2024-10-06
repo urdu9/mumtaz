@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00ccff;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #b3b3b3;
+}
+
+/* Audio List */
+.audio-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.audio-item {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.audio-item:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}
+
+.audio-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #00ccff;
+}
+
+.audio-item p {
+    color: #b3b3b3;
+    margin: 10px 0 0;
+}
+
+/* Dark Mode Audio Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.audio-container {
+    text-align: center;
+    color: #fff;
+}
+
+.audio-container h2 {
+    margin-bottom: 20px;
+    color: #00ccff;
+    font-size: 2rem;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    outline: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    color: #00ccff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #fff;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    text-align: center;
+    color: #bbb;
+    font-size: 14px;
+    position: fixed; /* Change to fixed */
+    left: 0; /* Align to the left */
+    bottom: 0; /* Keep it at the bottom */
+    width: 100%; /* Full width */
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+}
